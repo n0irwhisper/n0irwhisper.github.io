@@ -1,0 +1,143 @@
+/* Секция слайдера */
+.hero-slider {
+    position: relative;
+    width: 100%;
+    max-width: auto;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Контейнер для текста */
+.slider-content {
+    position: absolute;
+    top: 35%;
+    left: 10%;
+    color: white;
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Маленький текст (над заголовком) */
+.slider-content h3 {
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+/* Заголовок */
+.slider-content h2 {
+    font-size: 60px;
+    font-weight: 800;
+    line-height: 1.1;
+    color: #fff;
+}
+
+/* Акцентное слово в заголовке */
+.slider-content h2 span {
+    color: #FFC107; /* Желтый цвет */
+}
+
+/* Описание */
+.slider-content p {
+    font-size: 16px;
+    font-weight: 400;
+    max-width: 500px;
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 20px;
+}
+
+/* Кнопки */
+.btn-group {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+/* Основная кнопка */
+.btn-primary {
+    display: inline-block;
+    background: #FFC107;
+    color: black;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 12px 25px;
+    border-radius: 3px;
+    transition: 0.3s;
+}
+
+.btn-primary:hover {
+    background: #FFA000;
+}
+
+/* Вторая кнопка */
+.btn-secondary {
+    display: inline-block;
+    color: white;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 12px 20px;
+    border-bottom: 3px solid white;
+}
+
+.btn-secondary:hover {
+    border-bottom: 3px solid #FFC107;
+}
+
+/* Навигационные кнопки */
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: transparent;
+    color: white;
+    font-size: 24px;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.prev { left: 10px; }
+.next { right: 10px; }
+
+.prev:hover, .next:hover {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+
+#preloader {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ffffff; /* Change if needed */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+}
+
+/* Loader Animation */
+#status {
+    width: 120px;
+    height: 60px;
+    background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 150"><path fill="none" stroke="%23FFDC24" stroke-width="10" stroke-linecap="round" stroke-dasharray="300 385" stroke-dashoffset="0" d="M275 75c0 31-27 50-50 50-58 0-92-100-150-100-28 0-50 22-50 50s23 50 50 50c58 0 92-100 150-100 24 0 50 19 50 50Z"><animate attributeName="stroke-dashoffset" calcMode="spline" dur="3.1s" values="685;-685" keySplines="0 0 1 1" repeatCount="indefinite"></animate></path></svg>');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+
+
+
+.bordered-layout .page-wrapper{
+
+	padding:0px 50px 0px;
+
+}
+
+
