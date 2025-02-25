@@ -140,4 +140,25 @@
 
 }
 
+/* Стили для кнопки "Наверх" */
+#scrollTopBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #FFC107;
+    color: black;
+    border: none;
+    padding: 10px 15px;
+    font-size: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none; /* Скрываем кнопку по умолчанию */
+    transition: 0.3s;
+}
+
+#scrollTopBtn:hover {
+    background-color: #FFA000;
+}
+
+
 

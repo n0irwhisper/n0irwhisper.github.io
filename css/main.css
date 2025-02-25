@@ -1391,20 +1391,21 @@ label {
 
 /* scrollUp */
 #scrollUp {
-  background: #222;
-  height: 40px;
-  width: 40px;
-  right: 50px;
-  bottom: 77px;
-  color: #ffffff;
-  font-size: 20px;
-  text-align: center;
-  border-radius: 50%;
-  font-size: 20px;
-  line-height: 40px; }
+  position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #FFC107;
+    color: black;
+    border: none;
+    padding: 10px 15px;
+    font-size: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none; /* Скрываем кнопку по умолчанию */
+    transition: 0.3s;}
 
 #scrollUp:hover {
-  background: #333; }
+  background: #FFA000; }
 
 /*
   	Flaticon icon font: Flaticon
@@ -5759,7 +5760,7 @@ button {
   font-weight: 500; }
 
 .breadcrumb-menu li::before {
-  content: "\f105";
+  content: "›";
   display: inline-block;
   padding-bottom: 0;
   position: absolute;
